@@ -38,6 +38,16 @@ VALUES(
  date('1982-01-23'), 1300, 200, 30  
 );
 
+INSERT INTO emp_tab 
+VALUES(7009, 'ERCAN', 'QA ENGINEER', 7002,  
+ date('1992-12-12'),3000, 350, 70
+);
+
+INSERT INTO emp_tab 
+VALUES(7010, 'HANRY', 'QA ENGINEER', 7002,  
+ date('1992-12-12'),3000, 300, 70
+);
+
 DELETE FROM emp_tab WHERE empno=7005;
 
 

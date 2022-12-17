@@ -3,6 +3,8 @@ SELECT * FROM emp_tab;
 
 DELETE FROM emp_tab WHERE empno=7007;
 
+DELETE FROM emp_tab WHERE empno=7010;
+
 --Delete rows based on another table
 SELECT * FROM old_emp_tab;
 
