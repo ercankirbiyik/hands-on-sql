@@ -1,8 +1,8 @@
 --Add a new column in a table
-ALTER TABLE states ADD COLUMN test_col VARCHAR2(5); 
+ALTER TABLE states ADD COLUMN ercan_col VARCHAR2(5); 
 
 --Rename table name
-ALTER TABLE states RENAME TO new_states;
+ALTER TABLE new_states RENAME TO states;
 
 --Rename column name
-ALTER TABLE new_states RENAME COLUMN test_col TO testing;
+ALTER TABLE states RENAME COLUMN ercan_col TO testing;
