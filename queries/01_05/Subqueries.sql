@@ -5,6 +5,18 @@ WHERE deptno=(
   FROM emp_tab 
   WHERE empno=7001);
 
+SELECT empno,name,deptno,salary FROM emp_tab 
+WHERE name=(
+  SELECT name 
+  FROM emp_tab 
+  WHERE name LIKE'A%');
+
+SELECT empno,name,deptno,salary FROM emp_tab 
+WHERE salary=(
+  SELECT salary 
+  FROM emp_tab 
+  WHERE deptno=40);
+
 --Using same tables in the outer and inner queries
 SELECT * FROM states_tab 
 WHERE country_id=(
