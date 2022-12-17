@@ -18,3 +18,20 @@ CREATE TABLE states
   CONSTRAINT states_state_id_pk PRIMARY KEY(state_id), 
   CONSTRAINT states_country_id_fk FOREIGN KEY(country_id) 
   REFERENCES countries(country_id));
+
+CREATE TABLE cities 
+  (city_id NUMBER(10),
+  city_name VARCHAR2(20), 
+  city_region VARCHAR2(20), 
+  country_id NUMBER(10), 
+  total_customers NUMBER(20), 
+  profit_city_level NUMBER(20), 
+  CONSTRAINT cities_city_id_pk PRIMARY KEY(city_id), 
+  CONSTRAINT city_country_id_fk FOREIGN KEY(country_id) 
+  REFERENCES countries(country_id));
+
+
+INSERT INTO cities
+VALUES(11,'ISTANBUL',3,1,5,2);
+
+SELECT * FROM cities;
